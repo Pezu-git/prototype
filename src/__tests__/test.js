@@ -1,4 +1,5 @@
 /* eslint-disable no-undef */
+
 import mage from '../js/app.js';
 
 test('first test', () => {
