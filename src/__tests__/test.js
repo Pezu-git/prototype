@@ -11,7 +11,6 @@ import '../js/Zombie.js';
 // import Character from '../js/Character.js';
 // import Swordsman from '../js/Swordsman.js';
 
-
 test('first test', () => {
   expect(new Character('dds', 'Deamon')).toBe({
     name: 'dds',
