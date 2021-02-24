@@ -6,3 +6,5 @@ export default class Bowerman extends Character {
     console.log('dfs');
   }
 }
+const Bowman = new Bowerman();
+Bowman.upp();

@@ -6,5 +6,3 @@ import './Daemon.js';
 import './Undead.js';
 import './Zombie.js';
 // import Bowerman from './Bowerman.js';
-const Bowman = new Bowerman();
-Bowman();
