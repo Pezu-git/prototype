@@ -1,12 +1,10 @@
-/* eslint-disable no-restricted-syntax */
-export default function Mage(option) {
-  for (const item of option) {
-    if (item.health <= 15) {
-      return 'critical';
-    }
-    if (item.health <= 50) {
-      return 'wounded';
-    }
-    return 'healthy';
-  }
-}
+import './Character.js';
+import './Bowerman.js';
+import './Swordsman.js';
+import './Magician.js';
+import './Daemon.js';
+import './Undead.js';
+import './Zombie.js';
+// import Bowerman from './Bowerman.js';
+const Bowman = new Bowerman();
+Bowman();
