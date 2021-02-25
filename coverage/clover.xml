@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1614230610398" clover="3.2.0">
-  <project timestamp="1614230610399" name="All files">
-    <metrics statements="42" coveredstatements="40" conditionals="12" coveredconditionals="10" methods="13" coveredmethods="13" elements="67" coveredelements="63" complexity="0" loc="42" ncloc="42" packages="1" files="7" classes="7"/>
+<coverage generated="1614235470884" clover="3.2.0">
+  <project timestamp="1614235470884" name="All files">
+    <metrics statements="45" coveredstatements="45" conditionals="12" coveredconditionals="12" methods="14" coveredmethods="14" elements="71" coveredelements="71" complexity="0" loc="45" ncloc="45" packages="1" files="7" classes="7"/>
     <file name="Bowerman.js" path="C:\Users\artem\Desktop\Netology\Продвинутый JS\prototype\src\js\Bowerman.js">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <line num="6" count="1" type="stmt"/>
@@ -12,13 +12,16 @@
       <line num="14" count="1" type="stmt"/>
     </file>
     <file name="Character.js" path="C:\Users\artem\Desktop\Netology\Продвинутый JS\prototype\src\js\Character.js">
-      <metrics statements="6" coveredstatements="4" conditionals="12" coveredconditionals="10" methods="1" coveredmethods="1"/>
-      <line num="4" count="6" type="stmt"/>
-      <line num="5" count="6" type="stmt"/>
-      <line num="6" count="6" type="cond" truecount="3" falsecount="1"/>
-      <line num="7" count="0" type="stmt"/>
-      <line num="8" count="6" type="cond" truecount="7" falsecount="1"/>
-      <line num="9" count="0" type="stmt"/>
+      <metrics statements="9" coveredstatements="9" conditionals="12" coveredconditionals="12" methods="2" coveredmethods="2"/>
+      <line num="4" count="8" type="stmt"/>
+      <line num="5" count="8" type="stmt"/>
+      <line num="6" count="8" type="cond" truecount="4" falsecount="0"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="8" type="cond" truecount="8" falsecount="0"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="15" count="4" type="stmt"/>
+      <line num="16" count="4" type="stmt"/>
+      <line num="18" count="4" type="stmt"/>
     </file>
     <file name="Daemon.js" path="C:\Users\artem\Desktop\Netology\Продвинутый JS\prototype\src\js\Daemon.js">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
@@ -58,11 +61,11 @@
     </file>
     <file name="Zombie.js" path="C:\Users\artem\Desktop\Netology\Продвинутый JS\prototype\src\js\Zombie.js">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="7" count="1" type="stmt"/>
-      <line num="8" count="1" type="stmt"/>
-      <line num="9" count="1" type="stmt"/>
-      <line num="10" count="1" type="stmt"/>
+      <line num="5" count="3" type="stmt"/>
+      <line num="7" count="3" type="stmt"/>
+      <line num="8" count="3" type="stmt"/>
+      <line num="9" count="3" type="stmt"/>
+      <line num="10" count="3" type="stmt"/>
       <line num="14" count="1" type="stmt"/>
     </file>
   </project>
