@@ -1,20 +1,12 @@
-// eslint-disable-next-line import/no-cycle
-import Daemon from './Daemon.js';
-
+/* eslint-disable no-constant-condition */
 export default class Character {
   constructor(name, type) {
     this.name = name;
     this.type = type;
-    if (this.name.length < 2 || this.name.length > 10) {
+    if (this.name.length <= 2 || this.name.length > 10) {
       throw new Error('Не подходящее имя');
-    }
-    this.getChar();
-  }
-
-  getChar() {
-    if (this.type === 'Daemon') {
-      const deamon = new Daemon(this.name, this.type);
-      deamon.getChar();
+    } if (this.type !== 'Daemon' && this.type !== 'Bowerman' && this.type !== 'Swordsman' && this.type !== 'Magician' && this.type !== 'Undead' && this.type !== 'Zombie') {
+      throw new Error('Не подходящее имя класса');
     }
   }
 }

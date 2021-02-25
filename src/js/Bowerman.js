@@ -2,15 +2,18 @@
 import Character from './Character.js';
 
 export default class Bowerman extends Character {
-  getChar() {
+  constructor(name, type) {
+    super(name, type);
     this.health = 100;
     this.level = 1;
     this.attack = 25;
     this.defence = 25;
+  }
 
+  getChar() {
     return {
       name: this.name,
-      type: 'Deamon',
+      type: 'Bowerman',
       health: this.health,
       level: this.level,
       attack: this.attack,

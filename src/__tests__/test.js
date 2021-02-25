@@ -1,63 +1,78 @@
 /* eslint-disable no-undef */
 
-// import '../js/app.js';
-import '../js/Character.js';
-import '../js/Bowerman.js';
-import '../js/Swordsman.js';
-import '../js/Magician.js';
-import '../js/Daemon.js';
-import '../js/Undead.js';
-import '../js/Zombie.js';
-// import Character from '../js/Character.js';
-// import Swordsman from '../js/Swordsman.js';
+import Daemon from '../js/Daemon.js';
+import Bowerman from '../js/Bowerman.js';
+import Magician from '../js/Magician.js';
+import Swordsman from '../js/Swordsman.js';
+import Undead from '../js/Undead.js';
+import Zombie from '../js/Zombie.js';
 
 test('first test', () => {
-  expect(new Character('dds', 'Deamon')).toBe({
-    name: 'dds',
-    type: 'Deamon',
+  const daemon = new Daemon('hif', 'Daemon');
+  const receverDaemon = daemon.getChar();
+  const expectedDaemon = {
+    name: 'hif',
+    type: 'Daemon',
     health: 100,
     level: 1,
     attack: 10,
     defence: 40,
-  });
-  expect(new Bowerman('dds', 'Bowerman')).toBe({
-    name: 'dds',
-    type: 'Deamon',
+  };
+  expect(receverDaemon).toStrictEqual(expectedDaemon);
+  const bowerman = new Bowerman('hif', 'Bowerman');
+  const receverBowerman = bowerman.getChar();
+  const expectedBowerman = {
+    name: 'hif',
+    type: 'Bowerman',
     health: 100,
     level: 1,
     attack: 25,
     defence: 25,
-  });
-  expect(new Magician('dds', 'Magician')).toBe({
-    name: 'dds',
-    type: 'Deamon',
+  };
+  expect(receverBowerman).toStrictEqual(expectedBowerman);
+
+  const magician = new Magician('hif', 'Magician');
+  const receverMagician = magician.getChar();
+  const expectedMagician = {
+    name: 'hif',
+    type: 'Magician',
     health: 100,
     level: 1,
     attack: 10,
     defence: 40,
-  });
-  expect(new Swordsman('dds', 'Sworsman')).toBe({
-    name: 'dds',
-    type: 'Deamon',
+  };
+  expect(receverMagician).toStrictEqual(expectedMagician);
+  const swordsman = new Swordsman('hif', 'Swordsman');
+  const receverSwordsman = swordsman.getChar();
+  const expectedSwordsman = {
+    name: 'hif',
+    type: 'Swordsman',
     health: 100,
     level: 1,
     attack: 40,
     defence: 10,
-  });
-  expect(new Undead('dds', 'Undead')).toBe({
-    name: 'dds',
+  };
+  expect(receverSwordsman).toStrictEqual(expectedSwordsman);
+  const undead = new Undead('hif', 'Undead');
+  const receverUndead = undead.getChar();
+  const expectedUndead = {
+    name: 'hif',
     type: 'Undead',
     health: 100,
     level: 1,
     attack: 25,
     defence: 25,
-  });
-  expect(new Zombie('dds', 'Zombie')).toBe({
-    name: 'dds',
+  };
+  expect(receverUndead).toStrictEqual(expectedUndead);
+  const zombie = new Zombie('hif', 'Zombie');
+  const receverZombie = zombie.getChar();
+  const expectedZombie = {
+    name: 'hif',
     type: 'Zombie',
     health: 100,
     level: 1,
     attack: 40,
     defence: 10,
-  });
+  };
+  expect(receverZombie).toStrictEqual(expectedZombie);
 });
