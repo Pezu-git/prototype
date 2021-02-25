@@ -75,23 +75,12 @@ test('first test', () => {
     defence: 10,
   };
   expect(receverZombie).toStrictEqual(expectedZombie);
-  // const zombie1 = new Zombie('hif', 'Zombie1');
-  // const receverZombie1 = zombie1.getChar();
-  // const expectedZombie1 = {
-  //   name: 'hif',
-  //   type: 'Zombie',
-  //   health: 100,
-  //   level: 1,
-  //   attack: 40,
-  //   defence: 10,
-  // };
-  // expect(receverZombie1).toStrictEqual(expectedZombie1);
   const zombie1 = new Zombie('Zombie', 'Zombie1');
   const receverZombie1 = zombie1.getError('Не подходящее имя класса');
   const expectedZombie1 = console.error('Не подходящее имя класса');
   expect(receverZombie1).toStrictEqual(expectedZombie1);
   const zombie2 = new Zombie('ZombieZombie', 'Zombie');
   const receverZombie2 = zombie2.getError('Не подходящее имя');
-  const expectedZombie2 = console.error('Не подходящее имя класса');
+  const expectedZombie2 = console.error('Не подходящее имя');
   expect(receverZombie2).toStrictEqual(expectedZombie2);
 });
