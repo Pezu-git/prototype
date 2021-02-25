@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1614235470884" clover="3.2.0">
-  <project timestamp="1614235470884" name="All files">
+<coverage generated="1614267248088" clover="3.2.0">
+  <project timestamp="1614267248088" name="All files">
     <metrics statements="45" coveredstatements="45" conditionals="12" coveredconditionals="12" methods="14" coveredmethods="14" elements="71" coveredelements="71" complexity="0" loc="45" ncloc="45" packages="1" files="7" classes="7"/>
     <file name="Bowerman.js" path="C:\Users\artem\Desktop\Netology\Продвинутый JS\prototype\src\js\Bowerman.js">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
