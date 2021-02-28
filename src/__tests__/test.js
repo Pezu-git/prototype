@@ -6,81 +6,83 @@ import Magician from '../js/Magician.js';
 import Swordsman from '../js/Swordsman.js';
 import Undead from '../js/Undead.js';
 import Zombie from '../js/Zombie.js';
+import Character from '../js/Character.js';
 
 test('first test', () => {
-  const daemon = new Daemon('hif', 'Daemon');
-  const receverDaemon = daemon.getChar();
+  const daemon = new Daemon('Name', 'Daemon');
   const expectedDaemon = {
-    name: 'hif',
+    name: 'Name',
     type: 'Daemon',
     health: 100,
     level: 1,
     attack: 10,
     defence: 40,
   };
-  expect(receverDaemon).toStrictEqual(expectedDaemon);
-  const bowerman = new Bowerman('hif', 'Bowerman');
-  const receverBowerman = bowerman.getChar();
+  expect(daemon).toEqual(expectedDaemon);
+  const bowerman = new Bowerman('Name', 'Bowerman');
   const expectedBowerman = {
-    name: 'hif',
+    name: 'Name',
     type: 'Bowerman',
     health: 100,
     level: 1,
     attack: 25,
     defence: 25,
   };
-  expect(receverBowerman).toStrictEqual(expectedBowerman);
+  expect(bowerman).toEqual(expectedBowerman);
 
-  const magician = new Magician('hif', 'Magician');
-  const receverMagician = magician.getChar();
+  const magician = new Magician('Name', 'Magician');
   const expectedMagician = {
-    name: 'hif',
+    name: 'Name',
     type: 'Magician',
     health: 100,
     level: 1,
     attack: 10,
     defence: 40,
   };
-  expect(receverMagician).toStrictEqual(expectedMagician);
-  const swordsman = new Swordsman('hif', 'Swordsman');
-  const receverSwordsman = swordsman.getChar();
+  expect(magician).toEqual(expectedMagician);
+  const swordsman = new Swordsman('Name', 'Swordsman');
   const expectedSwordsman = {
-    name: 'hif',
+    name: 'Name',
     type: 'Swordsman',
     health: 100,
     level: 1,
     attack: 40,
     defence: 10,
   };
-  expect(receverSwordsman).toStrictEqual(expectedSwordsman);
-  const undead = new Undead('hif', 'Undead');
-  const receverUndead = undead.getChar();
+  expect(swordsman).toEqual(expectedSwordsman);
+  const undead = new Undead('Name', 'Undead');
   const expectedUndead = {
-    name: 'hif',
+    name: 'Name',
     type: 'Undead',
     health: 100,
     level: 1,
     attack: 25,
     defence: 25,
   };
-  expect(receverUndead).toStrictEqual(expectedUndead);
-  const zombie = new Zombie('hif', 'Zombie');
-  const receverZombie = zombie.getChar();
+  expect(undead).toEqual(expectedUndead);
+  const zombie = new Zombie('Name', 'Zombie');
   const expectedZombie = {
-    name: 'hif',
+    name: 'Name',
     type: 'Zombie',
     health: 100,
     level: 1,
     attack: 40,
     defence: 10,
   };
-  expect(receverZombie).toStrictEqual(expectedZombie);
-  const zombie1 = new Zombie('Zombie', 'Zombie1');
-  const receverZombie1 = zombie1.getError('Не подходящее имя класса');
-  const expectedZombie1 = console.error('Не подходящее имя класса');
-  expect(receverZombie1).toStrictEqual(expectedZombie1);
-  const zombie2 = new Zombie('ZombieZombie', 'Zombie');
-  const receverZombie2 = zombie2.getError('Не подходящее имя');
-  const expectedZombie2 = console.error('Не подходящее имя');
-  expect(receverZombie2).toStrictEqual(expectedZombie2);
+  expect(zombie).toEqual(expectedZombie);
+  function failCharacterName(a, b) {
+    // eslint-disable-next-line no-new
+    new Character(a, b);
+  }
+  expect(() => {
+    failCharacterName('I', 'Daemon');
+  }).toThrow('Не подходящее имя');
+
+  function failCharacterClass(a, b) {
+    // eslint-disable-next-line no-new
+    new Character(a, b);
+  }
+  expect(() => {
+    failCharacterClass('Name', 'daemon');
+  }).toThrow('Не подходящее имя класса');
 });
